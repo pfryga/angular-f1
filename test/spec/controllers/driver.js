@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: DriverCtrl', function () {
 
   // load the controller's module
   beforeEach(module('raceApp'));
 
-  var AboutCtrl,
+  var DriverCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    DriverCtrl = $controller('DriverCtrl', {
       $scope: scope
     });
   }));

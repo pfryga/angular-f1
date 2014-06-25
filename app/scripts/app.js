@@ -23,13 +23,13 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
       .when('/drivers', {
         templateUrl: 'views/drivers.html',
         controller: 'DriversCtrl'
+      })
+      .when('/drivers/:id', {
+        templateUrl: 'views/driver.html',
+        controller: 'DriverCtrl'
       })
       .otherwise({
         redirectTo: '/'
