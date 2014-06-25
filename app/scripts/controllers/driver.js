@@ -20,4 +20,8 @@ angular.module('raceApp')
     	$scope.details = response.MRData.StandingsTable.StandingsLists[0].DriverStandings[0];
     });
 
+    ergastAPIservice.getDriverRaces( $scope.id ).success(function (response) {
+    	$scope.races = response.MRData.RaceTable.Races;
+    });
+
   });
